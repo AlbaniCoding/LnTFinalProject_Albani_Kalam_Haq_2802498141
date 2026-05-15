@@ -1,5 +1,7 @@
 // import { useEffect, useState } from "react";
 // import axios from "axios";
+import Panel from "../components/Panel";
+import Navbar from "../components/Navbar";
 
 function AdminPanel() {
     // const [productList, setProuductList] = useState([]);
@@ -20,8 +22,9 @@ function AdminPanel() {
         
     //  }, []);
     return (
-        <>
-            
+        <>  
+            <Navbar/>
+            <Panel/>
         </>
     )   
 }

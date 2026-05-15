@@ -30,12 +30,16 @@ function LoginPage() {
 
                     <button className="p-2 m-2 bg-blue-500 hover:bg-blue-700 rounded-full text-white" onClick={() => {
                         {
-                            login(user, pass);
-                            if(localStorage.getItem("TOKOHAPPY_USERNAME") === "admin"){
-                                navigate("/admin");
+                            if(login(user, pass)) {
+                                if(localStorage.getItem("TOKOHAPPY_USERNAME") === "admin"){
+                                    navigate("/admin");
+                                }
+                                else {
+                                    navigate("/products");
+                                }
                             }
                             else {
-                                navigate("/products");
+                                alert("Username atau password salah");
                             }
                         }    
                     }}>Login</button>

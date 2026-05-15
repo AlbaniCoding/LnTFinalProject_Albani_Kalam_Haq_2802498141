@@ -19,13 +19,15 @@ else {
 export function login(username: string, password: string) {
     let idx = userlist.findIndex(x => x.user === username);
     if(idx === -1) {
-        return;
+        return false;
     }
     if(userlist[idx].pass === password) {
         localStorage.setItem("TOKOHAPPY_USERNAME", userlist[idx].user);
     }
+    return true;
 }
 
 export function register(username: string, password: string){
     userlist.push(new User(username, password));
+    localStorage.setItem("userlist", JSON.stringify(userlist));
 }

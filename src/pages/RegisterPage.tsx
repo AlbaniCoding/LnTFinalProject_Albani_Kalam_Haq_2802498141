@@ -33,7 +33,7 @@ function RegisterPage() {
                             register(user, pass);
                             navigate("/login");
                         }    
-                    }}>Login</button>
+                    }}>Register</button>
 
                 </div>
             </div>
