@@ -1,10 +1,9 @@
-import { getProductList, deleteProduct } from "../scripts/Products";
+import { getProductList, deleteProduct } from '../scripts/product';
 import { useState} from "react";
 
 export function Panel(){
 
     const [productList, setProuductList] = useState(getProductList() as any);
-    const username = localStorage.getItem('TOKOHAPPY_USERNAME');
 
     return (
         <>
