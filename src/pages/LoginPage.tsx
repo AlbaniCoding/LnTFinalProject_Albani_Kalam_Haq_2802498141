@@ -8,7 +8,7 @@ function LoginPage() {
     const navigate = useNavigate();
 
     return (
-        <>
+        <>  
             <Navbar></Navbar>
             <div className="flex justify-center items-center min-h-screen">
                 <div className='flex flex-col justify-center align-center items-center border-2 border-white rounded-2xl w-3xs'>
@@ -21,7 +21,7 @@ function LoginPage() {
                     />
 
                     <input
-                        type="text"
+                        type="password"
                         value={pass}
                         onChange={(e) => passState(e.target.value)}
                         placeholder="Password"

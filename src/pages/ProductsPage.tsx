@@ -1,15 +1,14 @@
 import Navbar from "../components/Navbar";
-// import { useState } from "react";
-// import { register } from '../scripts/user';
-// import { useNavigate } from "react-router-dom";
+import CheckoutButton from "../components/CheckoutButton";
+import BuyPanel from "../components/BuyPanel";
+
 function ProductsPage() {
-    // const [user, userState] = useState("");
-    // const [pass, passState] = useState("");
-    // const navigate = useNavigate();
 
     return (
         <>
             <Navbar></Navbar>
+            <CheckoutButton/>
+            <BuyPanel/>
         </>
     )
 }

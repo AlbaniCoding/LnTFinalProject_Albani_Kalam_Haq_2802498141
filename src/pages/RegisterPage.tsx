@@ -21,7 +21,7 @@ function RegisterPage() {
                     />
 
                     <input
-                        type="text"
+                        type="password"
                         value={pass}
                         onChange={(e) => passState(e.target.value)}
                         placeholder="Password"
